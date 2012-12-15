@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+<div data-role="page">
+	<div data-role="header">
+		<h1>Log Activity</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+		<input placeholder="Activity Title &lt;Your Text Here&gt;" name="activity_title">
+
+		<div data-role="controlgroup">
+			<a href="start_time" data-role="button" data-icon="arrow-r" data-iconpos="right">
+				<span class="buttontitle">Start Time</span>
+				<span class="buttondate"> Dec 15 16:04:09 </span>
+			</a>
+			<a href="end_time" data-role="button" data-icon="arrow-r" data-iconpos="right">
+				<span class="buttontitle">End Time</span>
+				<span class="buttondate">Dec 15 16:04:18 </span>
+			</a>
+
+		</div>
+		<div data-role="controlgroup">
+		<a href="example.biz" data-role="button" data-icon="arrow-r" data-iconpos="right">
+			<span class="buttontitle">Category</span>
+			<span class="buttondate"> Cats and Dogs </span>
+		</a>
+		</div>
+		<div class="logit-wrapper" data-role="controlgroup">
+			<a href="example.biz" data-role="button" data-inline="true" data-corners="false">
+				<span class="logit">Log It!</span>
+			</a>
+		</div>
+	</div><!-- /content -->
+	<div data-theme="d" data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="example.biz"><img src="img/11-clock.png"></a></li>
+			<li><a href="example.biz"><img src="img/16-line-chart.png"></a></li>
+			<li><a href="example.biz"><img src="img/19-gear.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- /page -->
+</body>
+</html>

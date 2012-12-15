@@ -1,0 +1,20 @@
+.buttontitle {
+	float: left;
+}
+.buttondate {
+	/* color: #2489ce; */
+	color: #6177a1;
+	font-size: 90%;
+	float: right;
+}
+
+.logit-wrapper {
+	text-align: center;
+	margin: 2em 1em 2em 1em;
+}
+
+.logit {
+	/* font-size: 175%; */
+	font-size: 1.75em;
+	margin: 1em;
+}
