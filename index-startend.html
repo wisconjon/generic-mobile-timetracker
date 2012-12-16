@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Select Category</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+   <!--Includes-->
+	<link href="css/mobiscroll-2.3.custom.min.css" rel="stylesheet" type="text/css" />
+	<script src="js/mobiscroll-2.3.custom.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(function(){
+		    // create a datetimepicker with default settings
+		    $('#startscroller').scroller({ 
+		    	preset: 'datetime', 
+		    	theme: 'ios',
+		    	mode: 'scroller',
+		    	display: 'modal'
+		    });
+		    $('#startshow').click(function(){
+		        $('#startscroller').scroller('show'); 
+		        return false;
+	    	});
+		    // create a datetimepicker with default settings
+		    $('#endscroller').scroller({ 
+		    	preset: 'datetime', 
+		    	theme: 'ios',
+		    	mode: 'scroller',
+		    	display: 'modal'
+		    });
+		    $('#endshow').click(function(){
+		        $('#endscroller').scroller('show'); 
+		        return false;
+	    	});
+		});
+	</script>
+</head> 
+<body> 
+<div data-role="page">
+	<div data-role="header">
+		<a href="index.html">Cancel</a>
+		<h1>Start &amp; End Time</h1>
+		<a href="index.html" data-theme="b">Done</a>
+	</div><!-- /header -->
+	<div data-role="content">
+		<div data-role="controlgroup" data-theme="c">
+			<input id="startscroller" name="startscroller" />
+			<input id="endscroller" name="endscroller" />
+			<a href="#" data-role="button" id="startshow" name="startshow">
+				<span class="buttontitle">Start Time</span>
+				<span class="buttondate"> Dec 15 16:04:09 </span>
+			</a>
+			<a href="#" data-role="button" id="endshow" name="endshow">
+				<span class="buttontitle">End Time</span>
+				<span class="buttondate">Dec 15 16:04:18 </span>
+			</a>
+
+		</div>
+	</div><!-- /content -->
+	<div data-theme="d" data-role="footer">
+		<div data-role="navbar">
+			<ul>
+			<li><a href="example.biz"><img src="img/11-clock.png"></a></li>
+			<li><a href="example.biz"><img src="img/16-line-chart.png"></a></li>
+			<li><a href="example.biz"><img src="img/19-gear.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- /page -->
+</body>
+</html>

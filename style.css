@@ -1,6 +1,24 @@
-.buttontitle {
-	float: left;
+.categorygroup {
+	text-align: left;
 }
+
+.categorygroup a {
+	text-align: left;
+}
+
+.categoryselectlist {
+	text-indent: 20px;
+}
+
+.categoryadd {
+	float: left;
+	width:75%;
+}
+
+.buttontitle {
+	float:left;
+}
+
 .buttondate {
 	/* color: #2489ce; */
 	color: #6177a1;
@@ -18,3 +36,7 @@
 	font-size: 1.75em;
 	margin: 1em;
 }
+
+ #startscroller,#endscroller {
+	display: none;
+} 
